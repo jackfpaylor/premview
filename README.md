@@ -1,24 +1,11 @@
-# README
+# About
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+premView is a software targeted towards public safety agencies in need of a solution
+for gate code and building access management. From knox box locations, floor plans, access codes, and owner contact information, premView is your go-to spot for
+access needs.
 
-Things you may want to cover:
+Here's a list of some of the features we plan to offer:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Quick-view PDFs of building floor plans and entrances
+* Keyholder contact information
+* 
