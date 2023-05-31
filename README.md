@@ -1,4 +1,11 @@
 # About
+<div class="wrapper">
+	<div class="badge">
+    	<i class="left"></i>
+    	<i class="right"></i>
+    	BETA
+	</div>
+</div>
 
 premView is a software targeted towards public safety agencies in need of a solution
 for gate code and building access management. From knox box locations, floor plans, access codes, and owner contact information, premView is your go-to spot for
