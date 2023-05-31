@@ -1,0 +1,49 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Norman PD Master List</h1>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+  <tr>
+    <th style="color:whitesmoke">First Name</th>
+    <th style="color:whitesmoke">Last Name</th>
+    <th style="color:whitesmoke">Business</th>
+    <th style="color:whitesmoke">Address Line 1</th>
+    <th style="color:whitesmoke">Address Line 2</th>
+    <th style="color:whitesmoke">City</th>
+    <th style="color:whitesmoke">State</th>
+    <th style="color:whitesmoke">Zip</th>
+    <th style="color:whitesmoke">Email</th>
+    <th style="color:whitesmoke">Primary Phone</th>
+    <th style="color:whitesmoke">Secondary Phone</th>
+    <th style="color:whitesmoke">Gate Code</th>
+    <th style="color:whitesmoke">Notes</th>
+    <th style="color:whitesmoke">Last Updated</th>
+    <th style="color:whitesmoke">Show Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @normanpds.each do |t| %>
+    <tr>
+      <td style="color:whitesmoke"><%= t.first_name %></td>
+      <td style="color:whitesmoke"><%= t.last_name %></td>
+      <td style="color:whitesmoke"><%= t.business %></td>
+      <td style="color:whitesmoke"><%= t.address1 %></td>
+      <td style="color:whitesmoke"><%= t.address2 %></td>
+      <td style="color:whitesmoke"><%= t.city %></td>
+      <td style="color:whitesmoke"><%= t.state %></td>
+      <td style="color:whitesmoke"><%= t.zip %></td>
+      <td style="color:whitesmoke"><%= t.email %></td>
+      <td style="color:whitesmoke"><%= t.phone1 %></td>
+      <td style="color:whitesmoke"><%= t.phone1 %></td>
+      <td style="color:whitesmoke"><%= t.gatecode %></td>
+      <td style="color:whitesmoke"><%= t.notes %></td>
+      <td style="color:whitesmoke"><%= t.updated_at %></td>
+      <td style="color:whitesmoke"><%= link_to "Show this record", t, method: :show, class: "btn btn-info btn-sm" %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New Record Entry", new_normanpd_path %>

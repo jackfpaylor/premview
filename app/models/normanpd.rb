@@ -1,0 +1,2 @@
+class Normanpd < ApplicationRecord
+end

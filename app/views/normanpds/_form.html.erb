@@ -1,0 +1,82 @@
+<%= form_with(model: normanpd) do |form| %>
+  <% if normanpd.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(normanpd.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+        <% normanpd.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :business, style: "display: block" %>
+    <%= form.text_field :business %>
+  </div>
+
+  <div>
+    <%= form.label :address1, style: "display: block" %>
+    <%= form.text_field :address1 %>
+  </div>
+
+  <div>
+    <%= form.label :address2, style: "display: block" %>
+    <%= form.text_field :address2 %>
+  </div>
+
+  <div>
+    <%= form.label :city, style: "display: block" %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :state, style: "display: block" %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div>
+    <%= form.label :zip, style: "display: block" %>
+    <%= form.text_field :zip %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :phone1, style: "display: block" %>
+    <%= form.text_field :phone1 %>
+  </div>
+
+  <div>
+    <%= form.label :phone2, style: "display: block" %>
+    <%= form.text_field :phone2 %>
+  </div>
+
+  <div>
+    <%= form.label :gatecode, style: "display: block" %>
+    <%= form.text_field :gatecode %>
+  </div>
+
+  <div>
+    <%= form.label :notes, style: "display: block" %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
