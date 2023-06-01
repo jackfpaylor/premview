@@ -68,10 +68,10 @@ class NormanpdsController < ApplicationController
       params.require(:normanpd).permit(:first_name, :last_name, :business, :address1, :address2, :city, :state, :zip, :email, :phone1, :phone2, :gatecode, :notes)
     end
 
+  # Need to work on list controller part for sorting
   def list
-    business = business.includes(:business)
-    business = business.where('name ilike ?', "%#{params[:business]}%") if params[:business].present?
-    business = business.order("#{params[:column]} #{params[:direction]}")
-    render(partial: 'search', locals: { players: players })
+    normanpds = Normanpds.includes(:business).order("#{params[:column]} asc")
+    render(partial: 'normanpd', locals: { normanpds: normanpds })
   end
+
 end
